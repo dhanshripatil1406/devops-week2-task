@@ -1,0 +1,70 @@
+🎯 Introduction
+Netflix is one of the best-known adopters of DevOps practices, using advanced automation, cloud-native infrastructure, and microservices to scale globally and release features rapidly.
+
+✅ 1. CI/CD Pipelines
+Netflix uses Jenkins for Continuous Integration.
+
+Spinnaker (developed by Netflix) is their Continuous Delivery platform.
+
+Every code change is automatically:
+
+Built
+
+Tested
+
+Packaged
+
+Deployed to production (if safe)
+
+🔄 Goal: Achieve multiple deployments per day with minimal downtime.
+
+🛠 Tools:
+Jenkins, Spinnaker, Git, Canary deployments, Blue/Green deployment, Monitoring tools
+
+☁️ 2. Cloud Infrastructure (AWS)
+Netflix migrated all infrastructure to Amazon Web Services (AWS).
+
+They use:
+
+Auto-scaling: Automatically adjusts compute capacity.
+
+Load balancing: Distributes traffic across servers.
+
+Multi-region deployment: Ensures global availability and disaster recovery.
+
+🧩 Netflix doesn't manage physical servers — everything is virtualized and scalable in the cloud.
+
+🛠 Tools:
+AWS EC2, S3, RDS, CloudFront, Auto Scaling Groups
+
+
+🧱 3. Microservices Architecture
+Netflix's architecture includes over 1000 microservices.
+
+Each team owns and deploys its own service independently.
+
+This allows rapid development and scaling.
+
+💡 Example: One service handles user recommendations, another handles billing — all communicate via APIs.
+
+🛠 Tools:
+Spring Boot, REST APIs, Docker, Zuul (API Gateway), Eureka (Service Registry)
+
+
+⚙️ 4. Automation & Monitoring
+Netflix uses automation for:
+
+Testing
+
+Deployment
+
+Monitoring
+
+Failure detection & recovery
+
+They introduced Chaos Engineering to test how systems behave under failure.
+
+🔥 Tool: Chaos Monkey — randomly shuts down services in production to ensure resilience.
+
+🛠 Tools:
+Chaos Monkey, Simian Army, Atlas (Monitoring), Hystrix (Fault Tolerance)
